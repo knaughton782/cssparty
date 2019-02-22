@@ -1,0 +1,41 @@
+header {
+  // background-color: $denim;
+}
+
+
+nav {
+  display: inline;
+  margin: 0;
+
+  ul {
+    // background-color: $denim;
+    padding: 15px 40px;
+    text-align: left;
+    float: left;
+    width: 100%;
+
+    li {
+      display: inline;
+      padding: 15px;
+    }
+  }
+
+
+nav a {
+  text-decoration: none;
+  line-height: 1.2em;
+  font-size: 1.5em;
+
+  a:link {
+    // color: $popcorn;
+  }
+  a:visited {
+    // color: $popcorn;
+  }
+  a:hover {
+    // color: $bubblegum;
+  }
+  a:active {
+    // color: $licorice;
+  }
+}

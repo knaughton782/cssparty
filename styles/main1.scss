@@ -1,21 +1,18 @@
 @import 'partials/layout';
-@import 'partials/colors';
-@import 'partials/buttons';
+//@import 'partials/colors';
+// @import 'partials/buttons';
 @import 'partials/nav';
-@import 'partials/typography';
+// @import 'partials/typography';
 
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
-
 /* basic elements */
 html {
   margin: 0;
   padding: 0;
 }
-// body {
-//   /*display: grid;
-//     grid-template-columns: 28% 72%;
-//     grid-template-rows: 25% 25% 25% 25%;*/
-// }
+body {
+  border: 2px solid green;
+}
 p {
   margin-top: 0;
   text-align: justify;
@@ -45,23 +42,18 @@ a:active {
 abbr {
   border-bottom: none;
 }
-
 /* specific divs */
 .page-wrapper {
   /*display: grid;
-    grid-template-columns: 28% 72%;
+    grid-template-columns: 30% 70%;
     grid-template-rows: auto;*/
-  display: grid;
-  grid-template-columns: 30% 70%;
+  background-color: aqua;
 }
-
 .intro {
   border: 2px solid hotpink;
-  grid-row-start: 1;
-  grid-column-start: 1;
-  grid-column-end: 3;
+  /*grid-column-start: 1;
+    grid-column-end: 3;*/
 }
-
 header h1 {
   text-align: center;
   /*font-family: add the variable for the zen garden project */
@@ -78,6 +70,8 @@ header h2 {
 header {
   /*background-color: aqua;*/
   padding: 0.5em;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 /* a demonstration of what can be accomplished... */
 .summary {
@@ -86,86 +80,98 @@ header {
   margin-left: 5vw;
   margin-right: 5vw;
   margin-top: -2em;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 .summary p {
   text-align: center;
   color: black;
 }
-
 /* the road to enlightenment */
 .preamble {
-  display: grid;
-  justify-content: flex-end;
-  width: 70%;
+  /*display: grid;
+    grid-template-columns: 30% 70%;*/
+  /*width: 70%;*/
+  margin-left: 30%;
   background-color: orange;
   color: white;
   padding: 1em;
-  grid-row-start: 2;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  /*grid-column-start: 2;*/
 }
-
 /* body text */
 .supporting {
+  display: grid;
+  max-width: 70%;
+  margin-left: 30%;
   background-color: chartreuse;
-  grid-row-start: 2;
-  grid-column-start: 2;
-  grid-column-end: 3;
   padding: 1em;
 }
-
 /*so what is this about?*/
 .explanation {
-  grid-column-start: 2;
+  grid-column-start: 1;
 }
 /*Participation */
 .participation {
-  grid-column-start: 2;
+  grid-column-start: 1;
 }
 .benefits {
-  grid-column-start: 2;
+  grid-column-start: 1;
 }
 .requirements {
-  grid-column-start: 2;
+  grid-column-start: 1;
 }
-
 /*This is the "by Dave Shea" section we want in the footer */
 .requirements p:nth-child(6) {
   display: inline-block;
   background-color: red;
-  min-width: 100%;
+  text-align: center;
 }
-
 footer {
+  display: grid;
+
   text-align: center;
   background-color: beige;
   padding: 4vw;
   margin: 0;
-  height: 100%;
+  max-width: 100%;
+  margin-top: 2em;
+}
+/* This is the box around the by Dave Shea section */
+p[role='contentinfo'] {
+  display: grid;
+  grid-column-start: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+p[role='contentinfo']::before {
+  display: grid;
+  background-color: olive;
+  border: 2px solid white;
 }
 footer a:link,
 footer a:visited {
   margin-right: 20px;
   color: black;
 }
-
 /*This is the menu section that sits on the left of the desktop view */
 .sidebar {
   background-color: yellow;
   display: grid;
-  width: 100%;
+  max-width: 30%;
 }
-
+/*to break the line before "by"*/
+li .design-name:nth-child(1) {
+  display: block;
+}
 .sidebar .wrapper {
   border: solid 2px blue;
   padding: 1em;
 }
-
 .sidebar h3.select {
   font-size: 1em;
   color: purple;
 }
-
 .sidebar h3.archives {
   color: green;
   font-size: 1em;
@@ -174,13 +180,11 @@ footer a:visited {
   color: pink;
   font-size: 1em;
 }
-
 .sidebar ul {
   margin: 0;
   padding: 0;
   color: white;
 }
-
 .sidebar li {
   line-height: 1.3em;
   font-size: 1em;
@@ -189,13 +193,12 @@ footer a:visited {
   list-style-type: none;
   background-color: black;
 }
-
 .sidebar li a:link {
   color: #988f5e;
 }
 .sidebar li a:visited {
   color: #b3ae94;
 }
-
 // .extra1 {
-// }
+
+//     }

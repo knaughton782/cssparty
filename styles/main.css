@@ -1,47 +1,101 @@
-@import 'partials/layout';
-@import 'partials/colors';
-@import 'partials/buttons';
-@import 'partials/nav';
-@import 'partials/typography';
+/****** Colors ******/
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans");
+@import url("https://fonts.googleapis.com/css?family=Sancreek");
+h1, h2 {
+  font-family: "Alegreya Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #505a6e;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 0.4em;
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1em 0;
+}
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 1.8rem;
+    margin: 1em 0 1.4em;
+  }
+}
+
+section > h2::before {
+  /* number before each section title */
+  color: #2c5f4b;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #303642;
+}
+p a {
+  color: #f37f80;
+  text-decoration: underline;
+}
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+}
 
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
-
 /* basic elements */
 html {
   margin: 0;
   padding: 0;
 }
-// body {
-//   /*display: grid;
-//     grid-template-columns: 28% 72%;
-//     grid-template-rows: 25% 25% 25% 25%;*/
-// }
+
 p {
   margin-top: 0;
   text-align: justify;
 }
+
 h3 {
   font: italic normal 1.4em georgia, sans-serif;
   letter-spacing: 1px;
   margin-bottom: 0;
   color: #7d775c;
 }
+
 a:link {
   font-weight: bold;
   text-decoration: none;
   color: #b7a5df;
 }
+
 a:visited {
   font-weight: bold;
   text-decoration: none;
   color: #d4cddc;
 }
+
 a:hover,
 a:focus,
 a:active {
   text-decoration: underline;
   color: #9685ba;
 }
+
 abbr {
   border-bottom: none;
 }
@@ -69,16 +123,19 @@ header h1 {
   font-size: 3em;
   margin-top: 100px;
 }
+
 header h2 {
   color: pink;
   text-align: center;
   margin-top: -20px;
 }
+
 /* in the header- CSS Zen Garden The Beauty of CSS Design */
 header {
   /*background-color: aqua;*/
   padding: 0.5em;
 }
+
 /* a demonstration of what can be accomplished... */
 .summary {
   /*background-color: beige;*/
@@ -87,6 +144,7 @@ header {
   margin-right: 5vw;
   margin-top: -2em;
 }
+
 .summary p {
   text-align: center;
   color: black;
@@ -118,13 +176,16 @@ header {
 .explanation {
   grid-column-start: 2;
 }
+
 /*Participation */
 .participation {
   grid-column-start: 2;
 }
+
 .benefits {
   grid-column-start: 2;
 }
+
 .requirements {
   grid-column-start: 2;
 }
@@ -143,8 +204,8 @@ footer {
   margin: 0;
   height: 100%;
 }
-footer a:link,
-footer a:visited {
+
+footer a:link, footer a:visited {
   margin-right: 20px;
   color: black;
 }
@@ -170,6 +231,7 @@ footer a:visited {
   color: green;
   font-size: 1em;
 }
+
 .sidebar h3.resources {
   color: pink;
   font-size: 1em;
@@ -193,9 +255,9 @@ footer a:visited {
 .sidebar li a:link {
   color: #988f5e;
 }
+
 .sidebar li a:visited {
   color: #b3ae94;
 }
 
-// .extra1 {
-// }
+/*# sourceMappingURL=main.css.map */
