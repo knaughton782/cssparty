@@ -1,7 +1,6 @@
-
-@media only screen and (min-width: 1024px) {
+/* @media only screen and (min-width: 1024px) {
   
-}
+} */
 
 nav {
   display: inline;
@@ -71,10 +70,11 @@ abbr {
 
 /* specific divs */
 .page-wrapper {
-  /*display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: auto;*/
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto; */
   background-color: aqua;
+  /* display: flex; */
 }
 
 .intro {
@@ -178,7 +178,7 @@ footer {
 }
 
 /* This is the box around the by Dave Shea section */
-p[role=contentinfo] {
+p[role='contentinfo'] {
   display: grid;
   grid-column-start: 1;
   position: absolute;
@@ -186,7 +186,7 @@ p[role=contentinfo] {
   right: 0;
 }
 
-p[role=contentinfo]::before {
+p[role='contentinfo']::before {
   display: grid;
   background-color: olive;
   border: 2px solid white;
@@ -203,6 +203,7 @@ footer a:visited {
   background-color: yellow;
   display: grid;
   max-width: 30%;
+  float: left;
 }
 
 /*to break the line before "by"*/
@@ -213,7 +214,9 @@ li .design-name:nth-child(1) {
 .sidebar .wrapper {
   border: solid 2px blue;
   padding: 1em;
-  
+  position: absolute;
+  top: 325px;
+  left: 0;
 }
 
 .sidebar h3.select {
@@ -254,5 +257,15 @@ li .design-name:nth-child(1) {
   color: #b3ae94;
 }
 
-
 /*# sourceMappingURL=main1.css.map */
+
+@media screen and (max-width: 650px) {
+  .sidebar {
+  border: solid 2px blue;
+  padding: 1em;
+  width: 100%;
+  /* position: absolute;
+  top: 325px;
+  left: 0; */
+}
+}

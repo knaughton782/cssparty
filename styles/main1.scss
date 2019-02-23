@@ -6,13 +6,13 @@
 
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 /* basic elements */
-html {
-  margin: 0;
-  padding: 0;
-}
-body {
-  border: 2px solid green;
-}
+// html {
+//   margin: 0;
+//   padding: 0;
+// }
+// body {
+//   border: 2px solid green;
+// }
 p {
   margin-top: 0;
   text-align: justify;
@@ -43,117 +43,119 @@ abbr {
   border-bottom: none;
 }
 /* specific divs */
-.page-wrapper {
-  /*display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: auto;*/
-  background-color: aqua;
+// .page-wrapper {
+//   /*display: grid;
+//     grid-template-columns: 30% 70%;
+//     grid-template-rows: auto;*/
+//   background-color: aqua;
 }
-.intro {
-  border: 2px solid hotpink;
-  /*grid-column-start: 1;
-    grid-column-end: 3;*/
-}
-header h1 {
-  text-align: center;
-  /*font-family: add the variable for the zen garden project */
-  color: black;
-  font-size: 3em;
-  margin-top: 100px;
-}
-header h2 {
-  color: pink;
-  text-align: center;
-  margin-top: -20px;
-}
+// .intro {
+//   border: 2px solid hotpink;
+//   /*grid-column-start: 1;
+//     grid-column-end: 3;*/
+// }
+// header h1 {
+//   text-align: center;
+//   /*font-family: add the variable for the zen garden project */
+//   color: black;
+//   font-size: 3em;
+//   margin-top: 100px;
+// }
+// header h2 {
+//   color: pink;
+//   text-align: center;
+//   margin-top: -20px;
+// }
+
+
+
 /* in the header- CSS Zen Garden The Beauty of CSS Design */
-header {
-  /*background-color: aqua;*/
-  padding: 0.5em;
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
+// header {
+//   /*background-color: aqua;*/
+//   padding: 0.5em;
+//   grid-column-start: 1;
+//   grid-column-end: 3;
+// }
 /* a demonstration of what can be accomplished... */
-.summary {
-  /*background-color: beige;*/
-  padding: 1em;
-  margin-left: 5vw;
-  margin-right: 5vw;
-  margin-top: -2em;
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-.summary p {
-  text-align: center;
-  color: black;
-}
+// .summary {
+//   /*background-color: beige;*/
+//   padding: 1em;
+//   margin-left: 5vw;
+//   margin-right: 5vw;
+//   margin-top: -2em;
+//   grid-column-start: 1;
+//   grid-column-end: 3;
+// }
+// .summary p {
+//   text-align: center;
+//   color: black;
+// }
 /* the road to enlightenment */
 .preamble {
   /*display: grid;
     grid-template-columns: 30% 70%;*/
   /*width: 70%;*/
-  margin-left: 30%;
-  background-color: orange;
-  color: white;
-  padding: 1em;
+  // margin-left: 30%;
+  // background-color: orange;
+  // color: white;
+  // padding: 1em;
   /*grid-column-start: 2;*/
 }
 /* body text */
-.supporting {
-  display: grid;
-  max-width: 70%;
-  margin-left: 30%;
-  background-color: chartreuse;
-  padding: 1em;
-}
+// .supporting {
+//   display: grid;
+//   max-width: 70%;
+//   margin-left: 30%;
+//   background-color: chartreuse;
+//   padding: 1em;
+// }
 /*so what is this about?*/
-.explanation {
-  grid-column-start: 1;
-}
-/*Participation */
-.participation {
-  grid-column-start: 1;
-}
-.benefits {
-  grid-column-start: 1;
-}
-.requirements {
-  grid-column-start: 1;
-}
+// .explanation {
+//   grid-column-start: 1;
+// }
+// /*Participation */
+// .participation {
+//   grid-column-start: 1;
+// }
+// .benefits {
+//   grid-column-start: 1;
+// }
+// .requirements {
+//   grid-column-start: 1;
+// }
 /*This is the "by Dave Shea" section we want in the footer */
-.requirements p:nth-child(6) {
-  display: inline-block;
-  background-color: red;
-  text-align: center;
-}
-footer {
-  display: grid;
-
-  text-align: center;
-  background-color: beige;
-  padding: 4vw;
-  margin: 0;
-  max-width: 100%;
-  margin-top: 2em;
-}
-/* This is the box around the by Dave Shea section */
-p[role='contentinfo'] {
-  display: grid;
-  grid-column-start: 1;
-  position: absolute;
-  left: 0;
-  right: 0;
-}
-p[role='contentinfo']::before {
-  display: grid;
-  background-color: olive;
-  border: 2px solid white;
-}
-footer a:link,
-footer a:visited {
-  margin-right: 20px;
-  color: black;
-}
+// .requirements p:nth-child(6) {
+//   display: inline-block;
+//   background-color: red;
+//   text-align: center;
+// }
+// footer {
+//   display: grid;
+//   text-align: center;
+//   background-color: beige;
+//   padding: 4vw;
+//   margin: 0;
+//   max-width: 100%;
+//   margin-top: 2em;
+// }
+// /* This is the box around the by Dave Shea section */
+// p[role='contentinfo'] {
+//   display: grid;
+//   grid-column-start: 1;
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+// }
+// p[role='contentinfo']::before {
+//   display: grid;
+//   background-color: olive;
+//   border: 2px solid white;
+// }
+// footer a:link,
+// footer a:visited {
+//   margin-right: 20px;
+//   color: black;
+// }
 /*This is the menu section that sits on the left of the desktop view */
 .sidebar {
   background-color: yellow;
