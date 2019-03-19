@@ -1,263 +1,371 @@
 /****** Colors ******/
+/*This is the container for all of the stuff at the top- CSS Zen garden/ the beauty of CSS/ a demonstration.../ download the example... / the road to enlightenment */
 @import url("https://fonts.googleapis.com/css?family=Alegreya+Sans");
 @import url("https://fonts.googleapis.com/css?family=Sancreek");
-h1, h2 {
-  font-family: "Alegreya Sans", sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
+.intro {
+  grid-column: 1/4;
+  grid-row: 1/1;
+}
+
+/*This is the "box" around CSS Zen garden / the beauty of css design*/
+header {
+  padding: 0.5em;
+}
+
+/*This is the text that says- "The Beauty of CSS Design" */
+header h2 {
   color: #505a6e;
+  text-align: center;
+  margin-top: -20px;
+  font-weight: 200;
+}
+
+header:after {
+  content: url(../../images/flagBannerAsset%2036.svg);
+  display: block;
+}
+
+header h1 {
+  display: none;
+}
+
+header:before {
+  content: url(../../images/ZenNameAsset%2037.svg);
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+  margin-top: 2em;
+}
+
+/* This is the text that says- "A demonstration of what can be accomplished..." */
+.summary p {
+  margin-left: 13vw;
+  margin-right: 13vw;
+  text-align: center;
+  color: #505a6e;
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 0.2em;
+  font-weight: 200;
+}
+
+.summary p a:nth-child(1) {
+  background-color: #b4d1c8;
+  padding: 0.25em;
+}
+
+.summary p a:nth-child(2) {
+  background-color: #83b09b;
+  padding: 0.25em;
+}
+
+.summary p a {
+  text-decoration: none;
+  color: white;
+}
+
+.summary p a:hover {
+  border-radius: 10%;
+  padding: 1em;
+}
+
+/* This is the section that starts with- "The road to enlightenment.." */
+.preamble {
+  background-color: #505a6e;
+  width: 100%;
+  padding: 1em;
+  color: white;
+  margin: 0 auto;
+  text-align: left;
+  display: none;
+}
+
+#zen-preamble h3 {
+  text-align: left;
+  color: #eaa959;
+  margin: 0;
+  width: 100%;
+}
+
+div .preamble:nth-child(2) {
+  background-color: pink;
+}
+
+body {
+  font-family: "Alegreya Sans", sans-serif;
 }
 
 h1 {
+  font-family: "Alegreya Sans", sans-serif;
+  text-transform: uppercase;
   font-size: 2.4rem;
   font-weight: 300;
   line-height: 1.2;
   margin: 0 0 0.4em;
 }
-@media only screen and (min-width: 768px) {
-  h1 {
-    font-size: 3.2rem;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  h1 {
-    font-size: 4rem;
-  }
+
+header h1 {
+  font-size: 3em;
+  color: #e64140;
+  text-shadow: 3px 3px 5px #b4d1c8;
+  font-family: "Sancreek", cursive;
 }
 
 h2 {
-  font-weight: bold;
+  font-family: "Alegreya Sans", sans-serif;
   text-transform: uppercase;
+  font-weight: 700;
+  font-weight: bold;
   margin: 1em 0;
-}
-@media only screen and (min-width: 768px) {
-  h2 {
-    font-size: 1.8rem;
-    margin: 1em 0 1.4em;
-  }
+  letter-spacing: 2px;
+  font-size: 20px;
 }
 
-section > h2::before {
-  /* number before each section title */
-  color: #2c5f4b;
+h3 {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: black;
+  width: 70%;
+  padding: 10px;
+}
+
+.preamble h3 {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #e6e7e8;
+  text-align: center;
+}
+
+.design-selection,
+.design-archives,
+.zen-resources {
+  font-family: "Alegreya Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.designer-name {
+  font-style: italic;
 }
 
 p {
-  font-size: 1.4rem;
+  font-size: 1rem;
   line-height: 1.4;
-  color: #303642;
+  font-size: "Alegreya Sans", sans-serif;
 }
 p a {
-  color: #f37f80;
   text-decoration: underline;
 }
-@media only screen and (min-width: 768px) {
-  p {
-    font-size: 1.6rem;
-    line-height: 1.6;
-  }
+
+footer {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 1em;
 }
 
-/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
-/* basic elements */
+ul {
+  list-style-type: none;
+  color: white;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+ul li:nth-child(1) {
+  background-color: #e64140;
+  padding: 1vw;
+  margin-bottom: 2vw;
+}
+
+ul li:nth-child(2) {
+  background-color: #f37f80;
+  padding: 1vw;
+  margin-bottom: 2vw;
+}
+
+ul li:nth-child(3) {
+  background-color: #eaa959;
+  padding: 1vw;
+  margin-bottom: 2vw;
+}
+
+ul li:nth-child(4) {
+  background-color: #b4d1c8;
+  padding: 1vw;
+  margin-bottom: 2vw;
+}
+
+ul li:nth-child(5) {
+  background-color: #c7d3a5;
+  padding: 1vw;
+  margin-bottom: 2vw;
+}
+
+ul li:nth-child(6) {
+  background-color: #83b09b;
+  padding: 1vw;
+  margin-bottom: 2vw;
+}
+
+ul li:nth-child(7) {
+  background-color: #449375;
+  padding: 1vw;
+  margin-bottom: 2vw;
+}
+
+ul li:nth-child(8) {
+  background-color: #505a6e;
+  padding: 1vw;
+  margin-bottom: 2vw;
+}
+
+li .design-name:nth-child(1) {
+  display: block;
+}
+
 html {
   margin: 0;
   padding: 0;
 }
 
-p {
-  margin-top: 0;
-  text-align: justify;
+/*This is the "nav" section that starts "Select a Design / Archives / Resources" */
+.sidebar {
+  grid-column: 1/3;
+  grid-row: 3/2;
+  /*background-color: red;*/
+  margin: 5px;
+  padding: 10px;
 }
 
-h3 {
-  font: italic normal 1.4em georgia, sans-serif;
-  letter-spacing: 1px;
-  margin-bottom: 0;
-  color: #7d775c;
+/*This is the body text container- "So what is this about / participation/ benefits/ requirements/ by Dave Shea */
+.main {
+  /*background-color: palegreen;*/
+  padding: 2vw;
 }
 
-a:link {
-  font-weight: bold;
-  text-decoration: none;
-  color: #b7a5df;
-}
-
-a:visited {
-  font-weight: bold;
-  text-decoration: none;
-  color: #d4cddc;
-}
-
-a:hover,
-a:focus,
-a:active {
-  text-decoration: underline;
-  color: #9685ba;
-}
-
-abbr {
-  border-bottom: none;
-}
-
-/* specific divs */
+/*This wraps the entire page*/
 .page-wrapper {
-  /*display: grid;
-    grid-template-columns: 28% 72%;
-    grid-template-rows: auto;*/
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-gap: 10px;
+  grid-template-columns: 1fr, 1fr 1fr 1fr;
+  grid-template-rows: 100px, 1fr 1fr 1fr, 1fr;
 }
 
-.intro {
-  border: 2px solid hotpink;
-  grid-row-start: 1;
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-
-header h1 {
-  text-align: center;
-  /*font-family: add the variable for the zen garden project */
-  color: black;
-  font-size: 3em;
-  margin-top: 100px;
-}
-
-header h2 {
-  color: pink;
-  text-align: center;
-  margin-top: -20px;
-}
-
-/* in the header- CSS Zen Garden The Beauty of CSS Design */
-header {
-  /*background-color: aqua;*/
-  padding: 0.5em;
-}
-
-/* a demonstration of what can be accomplished... */
-.summary {
-  /*background-color: beige;*/
-  padding: 1em;
-  margin-left: 5vw;
-  margin-right: 5vw;
-  margin-top: -2em;
-}
-
-.summary p {
-  text-align: center;
-  color: black;
-}
-
-/* the road to enlightenment */
-.preamble {
-  display: grid;
-  justify-content: flex-end;
-  width: 70%;
-  background-color: orange;
-  color: white;
-  padding: 1em;
-  grid-row-start: 2;
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
-
-/* body text */
-.supporting {
-  background-color: chartreuse;
-  grid-row-start: 2;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  padding: 1em;
-}
-
-/*so what is this about?*/
-.explanation {
-  grid-column-start: 2;
-}
-
-/*Participation */
-.participation {
-  grid-column-start: 2;
-}
-
-.benefits {
-  grid-column-start: 2;
-}
-
-.requirements {
-  grid-column-start: 2;
-}
-
-/*This is the "by Dave Shea" section we want in the footer */
-.requirements p:nth-child(6) {
-  display: inline-block;
-  background-color: red;
-  min-width: 100%;
-}
-
+/*This is the footer section with html/ CSS / cc / ally. / gh */
 footer {
+  display: grid;
+  grid-template-columns: 10% 20% 20% 20% 20% 10%;
   text-align: center;
   background-color: beige;
   padding: 4vw;
-  margin: 0;
-  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 22vw;
+  padding-top: 5vw;
 }
 
-footer a:link, footer a:visited {
-  margin-right: 20px;
-  color: black;
+/*This is the box around the footer section "html"*/
+.zen-validate-html {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: red;
 }
 
-/*This is the menu section that sits on the left of the desktop view */
-.sidebar {
-  background-color: yellow;
-  display: grid;
-  width: 100%;
+/*This is the box around the footer section "css"*/
+.zen-validate-css {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: pink;
 }
 
-.sidebar .wrapper {
-  border: solid 2px blue;
-  padding: 1em;
+/*This is the box around the footer section "cc"*/
+.zen-license {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-color: paleturquoise;
 }
 
-.sidebar h3.select {
-  font-size: 1em;
-  color: purple;
+/*This is the box around the footer section "ally."*/
+.zen-accessibility {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  background-color: orange;
 }
 
-.sidebar h3.archives {
-  color: green;
-  font-size: 1em;
+/*This is the box around the footer section "gh"*/
+.zen-github {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  background-color: magenta;
 }
 
-.sidebar h3.resources {
-  color: pink;
-  font-size: 1em;
+.explanation h3 {
+  background-color: #505a6e;
+  border: 1.5vw dotted #eaa959;
 }
 
-.sidebar ul {
-  margin: 0;
-  padding: 0;
-  color: white;
+.participation h3 {
+  background-color: #e64140;
+  /*padding:15px;*/
 }
 
-.sidebar li {
-  line-height: 1.3em;
-  font-size: 1em;
-  padding-top: 5px;
-  margin-bottom: 5px;
-  list-style-type: none;
-  background-color: black;
+.benefits h3 {
+  background-color: #f37f80;
 }
 
-.sidebar li a:link {
-  color: #988f5e;
+.requirements h3 {
+  background-color: #83b09b;
 }
 
-.sidebar li a:visited {
-  color: #b3ae94;
+body {
+  background-color: popcorn;
+  background: repeating-linear-gradient(to right, #e6e7e8, #e6e7e8 10px, #f5f3e6 10px, #f5f3e6 20px);
 }
+
+/*MOBILE VIEW*/
+@media (max-width: 650px) {
+  /*This is the "nav" section that starts "Select a Design / Archives / Resources" */
+  .sidebar {
+    grid-column: 2/3;
+    grid-row: 3/2;
+    border: 2px solid indigo;
+    background-color: lightcoral;
+    padding-bottom: 0.5em;
+  }
+
+  /*This wraps the entire page*/
+  .page-wrapper {
+    display: inline;
+    grid-gap: 10px;
+    grid-template-columns: 1fr, 1fr 1fr 1fr;
+    grid-template-rows: 100px, 1fr 1fr 1fr, 1fr;
+  }
+
+  /*This scoots the "a demonstration.... paragraph up a bit... Needed?*/
+  p {
+    margin-top: 0;
+    text-align: justify;
+  }
+
+  /*This is the mobile view footer*/
+  footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 0.25em;
+  }
+}
+/*# sourceMappingURL=grid.css.map */
 
 /*# sourceMappingURL=main.css.map */
